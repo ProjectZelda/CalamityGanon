@@ -1,13 +1,11 @@
-This example demonstrates how to collect code coverage by integration tests, tests are located in a separate Java Maven module.
-SonarQube aggregates code coverage by unit tests and integration tests to compute an overall code coverage.
+# ProjectZelda: Project 1 - OpenSort Java Library
 
-Prerequisites
-=============
-* [SonarQube](http://www.sonarqube.org/downloads/) 5.6+
-* Maven 3+
+![Build Status](https://sonarcloud.io/api/project_badges/measure?project=code2bits%3Aprojectzelda1&metric=alert_status)
 
-Usage
-=====
-* Build the project, execute all the tests and analyze the project with SonarQube Scanner for Maven:
+## License
 
-        mvn clean install sonar:sonar
+Copyright © 2018 Project Zelda
+
+The code in this repository is MIT licensed, and therefore free to use as you
+please for commercial or non-commercial purposes (see [LICENSE](LICENSE) for
+details).
