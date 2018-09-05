@@ -40,59 +40,59 @@ import com.code2bits.opensort.utils.ArrayUtils;
 public class BubbleSortTest { 
 	
 	
-	@Test(expected = IllegalArgumentException.class)
-	public void testBubbleSortNull() {
-		int[] unsortedArray = null;
-		new BubbleSort().sort(unsortedArray);
-	} 
-
-	
-	@Test
-	public void testBubbleSortSizeOne() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(1);
-		assertSortedArray(unsortedArray);
-	} 
-	
-	
-	@Test
-	public void testBubbleSortSizeTen() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(10);
-		assertSortedArray(unsortedArray);
-	} 
-
-	
-	@Test
-	public void testBubbleSortSizeTwenty() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(20);
-		assertSortedArray(unsortedArray);
-	} 
-	
-	
-	@Test
-	public void testBubbleSortSizeFifty() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(50);
-		assertSortedArray(unsortedArray);
-	} 
-	
-	
-	@Test
-	public void testBubbleSortSizeHundred() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(100);
-		assertSortedArray(unsortedArray);
-	} 
-	
-	
-	@Test
-	public void testBubbleSortSizeThousand() {
-		int[] unsortedArray = ArrayUtils.generateArraySize(1000);
-		assertSortedArray(unsortedArray);
-	} 
-
-
-	private void assertSortedArray(int[] unsortedArray) {			
-		new BubbleSort().sort(unsortedArray);
-		assertEquals("Array is Sorted.", true, ArrayUtils.isSorted(unsortedArray));
-	} 
+//	@Test(expected = IllegalArgumentException.class)
+//	public void testBubbleSortNull() {
+//		int[] unsortedArray = null;
+//		new BubbleSort().sort(unsortedArray);
+//	} 
+//
+//	
+//	@Test
+//	public void testBubbleSortSizeOne() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(1);
+//		assertSortedArray(unsortedArray);
+//	} 
+//	
+//	
+//	@Test
+//	public void testBubbleSortSizeTen() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(10);
+//		assertSortedArray(unsortedArray);
+//	} 
+//
+//	
+//	@Test
+//	public void testBubbleSortSizeTwenty() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(20);
+//		assertSortedArray(unsortedArray);
+//	} 
+//	
+//	
+//	@Test
+//	public void testBubbleSortSizeFifty() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(50);
+//		assertSortedArray(unsortedArray);
+//	} 
+//	
+//	
+//	@Test
+//	public void testBubbleSortSizeHundred() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(100);
+//		assertSortedArray(unsortedArray);
+//	} 
+//	
+//	
+//	@Test
+//	public void testBubbleSortSizeThousand() {
+//		int[] unsortedArray = ArrayUtils.generateArraySize(1000);
+//		assertSortedArray(unsortedArray);
+//	} 
+//
+//
+//	private void assertSortedArray(int[] unsortedArray) {			
+//		new BubbleSort().sort(unsortedArray);
+//		assertEquals("Array is Sorted.", true, ArrayUtils.isSorted(unsortedArray));
+//	} 
 	
 	
 }
