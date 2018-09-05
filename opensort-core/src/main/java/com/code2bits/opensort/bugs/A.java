@@ -1,5 +1,8 @@
 package com.code2bits.opensort.bugs;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 class A {
 	
 	  private static int count = 0;
@@ -9,7 +12,11 @@ class A {
 	    count++;  // Noncompliant
 	  }
 	
-	
+	  private void method() throws Exception {
+		  Connection conn = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true", "AppLogin", "");
+		  Connection conn2 = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true?user=user&password=");
+	  }
+	  
 	  private int x;
 	  private int y;
 
