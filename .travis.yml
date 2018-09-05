@@ -7,6 +7,7 @@ addons:
     token: $SONAR_TOKEN
 script:
   - sonar-scanner
+  - mvn clean install
 cache:
   directories:
   - $HOME/.m2/repository
