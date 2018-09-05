@@ -1,6 +1,8 @@
-# ProjectZelda: Project 1 - OpenSort Java Library
+# Calamity Ganon: Sorting Algorithms
 
 ![Build Status](https://sonarcloud.io/api/project_badges/measure?project=code2bits%3Aprojectzelda1&metric=alert_status)
+
+
 
 ## License
 
