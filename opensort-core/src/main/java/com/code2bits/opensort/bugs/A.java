@@ -13,8 +13,22 @@ class A {
 	  }
 	
 	  private void method() throws Exception {
-		  Connection conn = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true", "AppLogin", "");
+		  Connection conn1 = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true", "AppLogin", "");
 		  Connection conn2 = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true?user=user&password=");
+		  
+		  Connection conn = null;
+		  try {
+		    conn = DriverManager.getConnection("jdbc:mysql://localhost/test?" +
+		          "user=steve&password=blue"); // Noncompliant
+		    String uname = "steve";
+		    String password = "blue";
+		    conn = DriverManager.getConnection("jdbc:mysql://localhost/test?" +
+		          "user=" + uname + "&password=" + password); // Noncompliant
+
+		    java.net.PasswordAuthentication pa = new java.net.PasswordAuthentication("userName", "1234".toCharArray()); 
+		  } finally {
+			  
+		  }
 	  }
 	  
 	  private int x;
