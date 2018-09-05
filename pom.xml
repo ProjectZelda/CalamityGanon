@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <version>1.0.0-SNAPSHOT</version>
   
-  <name>OpenSort Java Library</name>
+  <name>Calamity Ganon</name>
   <url>http://github.com/Code2Bits/OpenSort</url>
   <description>OpenSort is a free Java library for sorting objects as part of a Collection or Array with an MIT open source license.</description>
 
